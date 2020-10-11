@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8305A4672533506700DD1179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A4662533506700DD1179 /* AppDelegate.swift */; };
+		8305A4692533506700DD1179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A4682533506700DD1179 /* SceneDelegate.swift */; };
+		8305A46B2533506700DD1179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A46A2533506700DD1179 /* ViewController.swift */; };
+		8305A46E2533506700DD1179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8305A46C2533506700DD1179 /* Main.storyboard */; };
+		8305A4702533506900DD1179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8305A46F2533506900DD1179 /* Assets.xcassets */; };
+		8305A4732533506900DD1179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8305A4712533506900DD1179 /* LaunchScreen.storyboard */; };
+		8305A47E2533506900DD1179 /* LeBonCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A47D2533506900DD1179 /* LeBonCoinTests.swift */; };
+		8305A4892533506900DD1179 /* LeBonCoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A4882533506900DD1179 /* LeBonCoinUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8305A47A2533506900DD1179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8305A45B2533506700DD1179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8305A4622533506700DD1179;
+			remoteInfo = LeBonCoin;
+		};
+		8305A4852533506900DD1179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8305A45B2533506700DD1179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8305A4622533506700DD1179;
+			remoteInfo = LeBonCoin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8305A4632533506700DD1179 /* LeBonCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeBonCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8305A4662533506700DD1179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8305A4682533506700DD1179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8305A46A2533506700DD1179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8305A46D2533506700DD1179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8305A46F2533506900DD1179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8305A4722533506900DD1179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8305A4742533506900DD1179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8305A4792533506900DD1179 /* LeBonCoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeBonCoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8305A47D2533506900DD1179 /* LeBonCoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeBonCoinTests.swift; sourceTree = "<group>"; };
+		8305A47F2533506900DD1179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8305A4842533506900DD1179 /* LeBonCoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeBonCoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8305A4882533506900DD1179 /* LeBonCoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeBonCoinUITests.swift; sourceTree = "<group>"; };
+		8305A48A2533506900DD1179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8305A4602533506700DD1179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8305A4762533506900DD1179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8305A4812533506900DD1179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8305A45A2533506700DD1179 = {
+			isa = PBXGroup;
+			children = (
+				8305A4652533506700DD1179 /* LeBonCoin */,
+				8305A47C2533506900DD1179 /* LeBonCoinTests */,
+				8305A4872533506900DD1179 /* LeBonCoinUITests */,
+				8305A4642533506700DD1179 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8305A4642533506700DD1179 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8305A4632533506700DD1179 /* LeBonCoin.app */,
+				8305A4792533506900DD1179 /* LeBonCoinTests.xctest */,
+				8305A4842533506900DD1179 /* LeBonCoinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8305A4652533506700DD1179 /* LeBonCoin */ = {
+			isa = PBXGroup;
+			children = (
+				8305A4662533506700DD1179 /* AppDelegate.swift */,
+				8305A4682533506700DD1179 /* SceneDelegate.swift */,
+				8305A46A2533506700DD1179 /* ViewController.swift */,
+				8305A46C2533506700DD1179 /* Main.storyboard */,
+				8305A46F2533506900DD1179 /* Assets.xcassets */,
+				8305A4712533506900DD1179 /* LaunchScreen.storyboard */,
+				8305A4742533506900DD1179 /* Info.plist */,
+			);
+			path = LeBonCoin;
+			sourceTree = "<group>";
+		};
+		8305A47C2533506900DD1179 /* LeBonCoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				8305A47D2533506900DD1179 /* LeBonCoinTests.swift */,
+				8305A47F2533506900DD1179 /* Info.plist */,
+			);
+			path = LeBonCoinTests;
+			sourceTree = "<group>";
+		};
+		8305A4872533506900DD1179 /* LeBonCoinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8305A4882533506900DD1179 /* LeBonCoinUITests.swift */,
+				8305A48A2533506900DD1179 /* Info.plist */,
+			);
+			path = LeBonCoinUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8305A4622533506700DD1179 /* LeBonCoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8305A48D2533506900DD1179 /* Build configuration list for PBXNativeTarget "LeBonCoin" */;
+			buildPhases = (
+				8305A45F2533506700DD1179 /* Sources */,
+				8305A4602533506700DD1179 /* Frameworks */,
+				8305A4612533506700DD1179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeBonCoin;
+			productName = LeBonCoin;
+			productReference = 8305A4632533506700DD1179 /* LeBonCoin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8305A4782533506900DD1179 /* LeBonCoinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8305A4902533506900DD1179 /* Build configuration list for PBXNativeTarget "LeBonCoinTests" */;
+			buildPhases = (
+				8305A4752533506900DD1179 /* Sources */,
+				8305A4762533506900DD1179 /* Frameworks */,
+				8305A4772533506900DD1179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8305A47B2533506900DD1179 /* PBXTargetDependency */,
+			);
+			name = LeBonCoinTests;
+			productName = LeBonCoinTests;
+			productReference = 8305A4792533506900DD1179 /* LeBonCoinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8305A4832533506900DD1179 /* LeBonCoinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8305A4932533506900DD1179 /* Build configuration list for PBXNativeTarget "LeBonCoinUITests" */;
+			buildPhases = (
+				8305A4802533506900DD1179 /* Sources */,
+				8305A4812533506900DD1179 /* Frameworks */,
+				8305A4822533506900DD1179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8305A4862533506900DD1179 /* PBXTargetDependency */,
+			);
+			name = LeBonCoinUITests;
+			productName = LeBonCoinUITests;
+			productReference = 8305A4842533506900DD1179 /* LeBonCoinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8305A45B2533506700DD1179 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					8305A4622533506700DD1179 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					8305A4782533506900DD1179 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 8305A4622533506700DD1179;
+					};
+					8305A4832533506900DD1179 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 8305A4622533506700DD1179;
+					};
+				};
+			};
+			buildConfigurationList = 8305A45E2533506700DD1179 /* Build configuration list for PBXProject "LeBonCoin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8305A45A2533506700DD1179;
+			productRefGroup = 8305A4642533506700DD1179 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8305A4622533506700DD1179 /* LeBonCoin */,
+				8305A4782533506900DD1179 /* LeBonCoinTests */,
+				8305A4832533506900DD1179 /* LeBonCoinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8305A4612533506700DD1179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8305A4732533506900DD1179 /* LaunchScreen.storyboard in Resources */,
+				8305A4702533506900DD1179 /* Assets.xcassets in Resources */,
+				8305A46E2533506700DD1179 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8305A4772533506900DD1179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8305A4822533506900DD1179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8305A45F2533506700DD1179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8305A46B2533506700DD1179 /* ViewController.swift in Sources */,
+				8305A4672533506700DD1179 /* AppDelegate.swift in Sources */,
+				8305A4692533506700DD1179 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8305A4752533506900DD1179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8305A47E2533506900DD1179 /* LeBonCoinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8305A4802533506900DD1179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8305A4892533506900DD1179 /* LeBonCoinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8305A47B2533506900DD1179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8305A4622533506700DD1179 /* LeBonCoin */;
+			targetProxy = 8305A47A2533506900DD1179 /* PBXContainerItemProxy */;
+		};
+		8305A4862533506900DD1179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8305A4622533506700DD1179 /* LeBonCoin */;
+			targetProxy = 8305A4852533506900DD1179 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8305A46C2533506700DD1179 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8305A46D2533506700DD1179 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8305A4712533506900DD1179 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8305A4722533506900DD1179 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8305A48B2533506900DD1179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8305A48C2533506900DD1179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8305A48E2533506900DD1179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87SB87GRTA;
+				INFOPLIST_FILE = LeBonCoin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeansarda.LeBonCoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8305A48F2533506900DD1179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87SB87GRTA;
+				INFOPLIST_FILE = LeBonCoin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeansarda.LeBonCoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8305A4912533506900DD1179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87SB87GRTA;
+				INFOPLIST_FILE = LeBonCoinTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeansarda.LeBonCoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeBonCoin.app/LeBonCoin";
+			};
+			name = Debug;
+		};
+		8305A4922533506900DD1179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87SB87GRTA;
+				INFOPLIST_FILE = LeBonCoinTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeansarda.LeBonCoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeBonCoin.app/LeBonCoin";
+			};
+			name = Release;
+		};
+		8305A4942533506900DD1179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87SB87GRTA;
+				INFOPLIST_FILE = LeBonCoinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeansarda.LeBonCoinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeBonCoin;
+			};
+			name = Debug;
+		};
+		8305A4952533506900DD1179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87SB87GRTA;
+				INFOPLIST_FILE = LeBonCoinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeansarda.LeBonCoinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeBonCoin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8305A45E2533506700DD1179 /* Build configuration list for PBXProject "LeBonCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8305A48B2533506900DD1179 /* Debug */,
+				8305A48C2533506900DD1179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8305A48D2533506900DD1179 /* Build configuration list for PBXNativeTarget "LeBonCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8305A48E2533506900DD1179 /* Debug */,
+				8305A48F2533506900DD1179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8305A4902533506900DD1179 /* Build configuration list for PBXNativeTarget "LeBonCoinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8305A4912533506900DD1179 /* Debug */,
+				8305A4922533506900DD1179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8305A4932533506900DD1179 /* Build configuration list for PBXNativeTarget "LeBonCoinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8305A4942533506900DD1179 /* Debug */,
+				8305A4952533506900DD1179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8305A45B2533506700DD1179 /* Project object */;
+}
