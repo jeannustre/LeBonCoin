@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		8305A4672533506700DD1179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A4662533506700DD1179 /* AppDelegate.swift */; };
 		8305A4692533506700DD1179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A4682533506700DD1179 /* SceneDelegate.swift */; };
-		8305A46B2533506700DD1179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A46A2533506700DD1179 /* ViewController.swift */; };
-		8305A46E2533506700DD1179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8305A46C2533506700DD1179 /* Main.storyboard */; };
+		8305A46B2533506700DD1179 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A46A2533506700DD1179 /* ListViewController.swift */; };
 		8305A4702533506900DD1179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8305A46F2533506900DD1179 /* Assets.xcassets */; };
 		8305A4732533506900DD1179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8305A4712533506900DD1179 /* LaunchScreen.storyboard */; };
 		8305A47E2533506900DD1179 /* LeBonCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A47D2533506900DD1179 /* LeBonCoinTests.swift */; };
 		8305A4892533506900DD1179 /* LeBonCoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A4882533506900DD1179 /* LeBonCoinUITests.swift */; };
+		83DE094E25339DDC0063F4ED /* ListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE094D25339DDC0063F4ED /* ListProtocols.swift */; };
+		83DE095325339DE60063F4ED /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE095225339DE60063F4ED /* ListPresenter.swift */; };
+		83DE095825339DEF0063F4ED /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE095725339DEF0063F4ED /* ListInteractor.swift */; };
+		83DE095D25339DF80063F4ED /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE095C25339DF80063F4ED /* ListRouter.swift */; };
+		83DE09632533A0D50063F4ED /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE09622533A0D50063F4ED /* Listing.swift */; };
+		83DE096C2533A1360063F4ED /* ListingsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE096B2533A1360063F4ED /* ListingsRequest.swift */; };
+		83DE09752533A1500063F4ED /* ListingsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE09742533A1500063F4ED /* ListingsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +44,7 @@
 		8305A4632533506700DD1179 /* LeBonCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeBonCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8305A4662533506700DD1179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8305A4682533506700DD1179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8305A46A2533506700DD1179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8305A46D2533506700DD1179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8305A46A2533506700DD1179 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		8305A46F2533506900DD1179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8305A4722533506900DD1179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8305A4742533506900DD1179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		8305A4842533506900DD1179 /* LeBonCoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeBonCoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8305A4882533506900DD1179 /* LeBonCoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeBonCoinUITests.swift; sourceTree = "<group>"; };
 		8305A48A2533506900DD1179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83DE094D25339DDC0063F4ED /* ListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocols.swift; sourceTree = "<group>"; };
+		83DE095225339DE60063F4ED /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		83DE095725339DEF0063F4ED /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		83DE095C25339DF80063F4ED /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		83DE09622533A0D50063F4ED /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		83DE096B2533A1360063F4ED /* ListingsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsRequest.swift; sourceTree = "<group>"; };
+		83DE09742533A1500063F4ED /* ListingsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +111,11 @@
 		8305A4652533506700DD1179 /* LeBonCoin */ = {
 			isa = PBXGroup;
 			children = (
-				8305A4662533506700DD1179 /* AppDelegate.swift */,
-				8305A4682533506700DD1179 /* SceneDelegate.swift */,
-				8305A46A2533506700DD1179 /* ViewController.swift */,
-				8305A46C2533506700DD1179 /* Main.storyboard */,
-				8305A46F2533506900DD1179 /* Assets.xcassets */,
-				8305A4712533506900DD1179 /* LaunchScreen.storyboard */,
-				8305A4742533506900DD1179 /* Info.plist */,
+				8305A4A925335B2500DD1179 /* Stories */,
+				8305A4A825335B0900DD1179 /* Resources */,
+				83DE096A2533A11B0063F4ED /* Network */,
+				83DE09612533A0CB0063F4ED /* Models */,
+				8305A4B1253393FE00DD1179 /* Helpers */,
 			);
 			path = LeBonCoin;
 			sourceTree = "<group>";
@@ -126,6 +136,70 @@
 				8305A48A2533506900DD1179 /* Info.plist */,
 			);
 			path = LeBonCoinUITests;
+			sourceTree = "<group>";
+		};
+		8305A4A825335B0900DD1179 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8305A4662533506700DD1179 /* AppDelegate.swift */,
+				8305A4682533506700DD1179 /* SceneDelegate.swift */,
+				8305A46F2533506900DD1179 /* Assets.xcassets */,
+				8305A4712533506900DD1179 /* LaunchScreen.storyboard */,
+				8305A4742533506900DD1179 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8305A4A925335B2500DD1179 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				8305A4AA25335B3000DD1179 /* List */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		8305A4AA25335B3000DD1179 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				8305A46A2533506700DD1179 /* ListViewController.swift */,
+				83DE094D25339DDC0063F4ED /* ListProtocols.swift */,
+				83DE095225339DE60063F4ED /* ListPresenter.swift */,
+				83DE095725339DEF0063F4ED /* ListInteractor.swift */,
+				83DE095C25339DF80063F4ED /* ListRouter.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		8305A4B1253393FE00DD1179 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		83DE09612533A0CB0063F4ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83DE09622533A0D50063F4ED /* Listing.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83DE096A2533A11B0063F4ED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				83DE09732533A1430063F4ED /* Listings */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		83DE09732533A1430063F4ED /* Listings */ = {
+			isa = PBXGroup;
+			children = (
+				83DE096B2533A1360063F4ED /* ListingsRequest.swift */,
+				83DE09742533A1500063F4ED /* ListingsResponse.swift */,
+			);
+			path = Listings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +307,6 @@
 			files = (
 				8305A4732533506900DD1179 /* LaunchScreen.storyboard in Resources */,
 				8305A4702533506900DD1179 /* Assets.xcassets in Resources */,
-				8305A46E2533506700DD1179 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +331,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8305A46B2533506700DD1179 /* ViewController.swift in Sources */,
+				83DE095825339DEF0063F4ED /* ListInteractor.swift in Sources */,
+				83DE096C2533A1360063F4ED /* ListingsRequest.swift in Sources */,
+				83DE095D25339DF80063F4ED /* ListRouter.swift in Sources */,
+				83DE09752533A1500063F4ED /* ListingsResponse.swift in Sources */,
+				83DE09632533A0D50063F4ED /* Listing.swift in Sources */,
+				83DE095325339DE60063F4ED /* ListPresenter.swift in Sources */,
+				8305A46B2533506700DD1179 /* ListViewController.swift in Sources */,
 				8305A4672533506700DD1179 /* AppDelegate.swift in Sources */,
 				8305A4692533506700DD1179 /* SceneDelegate.swift in Sources */,
+				83DE094E25339DDC0063F4ED /* ListProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +376,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8305A46C2533506700DD1179 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8305A46D2533506700DD1179 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8305A4712533506900DD1179 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,7 +510,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87SB87GRTA;
-				INFOPLIST_FILE = LeBonCoin/Info.plist;
+				INFOPLIST_FILE = LeBonCoin/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +519,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeansarda.LeBonCoin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -457,7 +530,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87SB87GRTA;
-				INFOPLIST_FILE = LeBonCoin/Info.plist;
+				INFOPLIST_FILE = LeBonCoin/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +539,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeansarda.LeBonCoin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
