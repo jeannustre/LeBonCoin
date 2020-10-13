@@ -18,9 +18,13 @@ protocol ListPresenterToViewProtocol: class {
 /// Delegates from the interactor (api/storage) to the presenter (business rules)
 protocol ListInteractorToPresenterProtocol: class {
     /// Called on fetch listings success
-    func getListingsSuccess(response: ListingsResponse)
+    func getListingsSuccess(response: [Listing])
     /// Called on fetch listings failure
     func getListingsError(error: Error)
+    /// Called when categories were fetched successfully
+    func getCategoriesSuccess(response: [Category])
+    /// Called when categories couldn't be fetched
+    func getCategoriesError(error: Error)
 }
 
 /// Delegates from the presenter (business rules) to the interactor (api or storage)
@@ -28,7 +32,9 @@ protocol ListPresenterToInteractorProtocol: class {
     /// Reference to the presenter.
     var presenter: ListInteractorToPresenterProtocol? { get set }
     /// Used to fetch listings
-    func getListings(object: ListingsRequest)
+    func getListings()
+    /// Used to fetch categories
+    func getCategories()
 }
 
 /// Delegates from the view (ui) to the presenter (business rules)
@@ -46,7 +52,7 @@ protocol ListViewToPresenterProtocol: class {
     /// Called by the view to get the number of rows to display
     func numberOfListings() -> Int
     /// Returns the Listing for the specified index
-    func listing(at indexPath: IndexPath) -> Listing?
+    func listing(at indexPath: IndexPath) -> ListingViewModel?
     /// Tells the presenter a Listing has been tapped
     func listingTapped(at indexPath: IndexPath)
 }

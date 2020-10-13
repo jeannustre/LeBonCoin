@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Look into SceneDelegate.swift for the Scene-based init
         } else {
             self.window = UIWindow(frame: UIScreen.main.bounds)
-            self.window?.rootViewController = ListViewController()
+            self.window?.rootViewController = ListRouter.createModule()
             self.window?.makeKeyAndVisible()
         }
         
