@@ -67,7 +67,7 @@ extension ListPresenter: ListInteractorToPresenterProtocol {
 
     /// Called on fetch listings success
     func getListingsSuccess(response: [Listing]) {
-        self.l	istings = response
+        self.listings = response
         view?.gotListings()
     }
     
