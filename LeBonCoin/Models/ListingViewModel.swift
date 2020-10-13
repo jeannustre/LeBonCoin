@@ -42,6 +42,7 @@ struct ListingViewModel {
     
     public init(listing: Listing, categories: [Category]?) {
         self.listing = listing
+        self.categories = categories
     }
     
 }

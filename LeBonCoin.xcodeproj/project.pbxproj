@@ -23,6 +23,8 @@
 		83D1E88425363A00004AF8EB /* DMSansFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1E88325363A00004AF8EB /* DMSansFont.swift */; };
 		83D1E89D253642D3004AF8EB /* TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 83D1E89C253642D3004AF8EB /* TestData.json */; };
 		83D1E8A2253642E0004AF8EB /* TestCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = 83D1E8A1253642E0004AF8EB /* TestCategories.json */; };
+		83D1E8AD25365B64004AF8EB /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1E8AC25365B64004AF8EB /* CategoryView.swift */; };
+		83D1E8B225365BD2004AF8EB /* AlmostKingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1E8B125365BD2004AF8EB /* AlmostKingfisher.swift */; };
 		83DE094E25339DDC0063F4ED /* ListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE094D25339DDC0063F4ED /* ListProtocols.swift */; };
 		83DE095325339DE60063F4ED /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE095225339DE60063F4ED /* ListPresenter.swift */; };
 		83DE095825339DEF0063F4ED /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE095725339DEF0063F4ED /* ListInteractor.swift */; };
@@ -76,6 +78,8 @@
 		83D1E88325363A00004AF8EB /* DMSansFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMSansFont.swift; sourceTree = "<group>"; };
 		83D1E89C253642D3004AF8EB /* TestData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestData.json; sourceTree = "<group>"; };
 		83D1E8A1253642E0004AF8EB /* TestCategories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestCategories.json; sourceTree = "<group>"; };
+		83D1E8AC25365B64004AF8EB /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		83D1E8B125365BD2004AF8EB /* AlmostKingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmostKingfisher.swift; sourceTree = "<group>"; };
 		83DE094D25339DDC0063F4ED /* ListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocols.swift; sourceTree = "<group>"; };
 		83DE095225339DE60063F4ED /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		83DE095725339DEF0063F4ED /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				83D1E85F253634B7004AF8EB /* NamedColors.swift */,
+				83D1E8B125365BD2004AF8EB /* AlmostKingfisher.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				83D1E87E25363995004AF8EB /* ListingTableViewCell.swift */,
+				83D1E8AC25365B64004AF8EB /* CategoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -394,9 +400,11 @@
 				8305A46B2533506700DD1179 /* ListViewController.swift in Sources */,
 				8305A4672533506700DD1179 /* AppDelegate.swift in Sources */,
 				8305A4692533506700DD1179 /* SceneDelegate.swift in Sources */,
+				83D1E8B225365BD2004AF8EB /* AlmostKingfisher.swift in Sources */,
 				83DE094E25339DDC0063F4ED /* ListProtocols.swift in Sources */,
 				83D1E865253635AE004AF8EB /* ListingViewModel.swift in Sources */,
 				83D1E86F253635F6004AF8EB /* Category.swift in Sources */,
+				83D1E8AD25365B64004AF8EB /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
