@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Documentation  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a title="Documentation  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">LeBonCoin 1 Docs</a> (43% documented)</p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">LeBonCoin Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Documentation  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="documentation.html">Documentation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Views.html">Views</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/ListingTableViewCell.html">ListingTableViewCell</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Models.html">Models</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Listing.html">Listing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Listing/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ListingViewModel.html">ListingViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Images.html">Images</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Category.html">Category</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="List%20Module.html">List Module</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/ListViewController.html">ListViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ListInteractor.html">ListInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ListPresenter.html">ListPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ListRouter.html">ListRouter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ListPresenterToViewProtocol.html">ListPresenterToViewProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ListInteractorToPresenterProtocol.html">ListInteractorToPresenterProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ListPresenterToInteractorProtocol.html">ListPresenterToInteractorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ListViewToPresenterProtocol.html">ListViewToPresenterProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ListPresenterToRouterProtocol.html">ListPresenterToRouterProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/NamedColors.html">NamedColors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SceneDelegate.html">SceneDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/DMSansFont.html">DMSansFont</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Other%20Protocols.html#/s:9LeBonCoin15ListingProtocolP">ListingProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='documentation' class='heading'>Documentation</h1>
+
+<p>The documentation is managed with <a href="https://github.com/realm/jazzy">Jazzy</a>.</p>
+<h2 id='how-to-write-your-comments' class='heading'>How to write your comments</h2>
+
+<p>For your comments to count as documentation, they should be written with either three slashes at the beginning of each line :</p>
+<pre class="highlight plaintext"><code>/// This will appear in the documentation for the func.
+func someFunc() {}
+</code></pre>
+
+<p>Or the slash/asterisk sequence that resembles this :</p>
+<pre class="highlight plaintext"><code>/**
+    Same here.
+ */
+func someOtherFunc() {}
+</code></pre>
+
+<p>The syntax is mainly markdown.</p>
+<h2 id='advanced-example' class='heading'>Advanced example</h2>
+
+<p>Consider the following declaration :</p>
+<pre class="highlight plaintext"><code>/**
+    Another complicated function.
+
+    - Parameter fullname: The fullname that will be broken into its parts.
+    - Returns: A *tuple* with the first and last name.
+
+    - Remark:
+        There's a counterpart function that concatenates the first and last name into a full name.
+    - SeeAlso:  `createFullName(_:lastname:)`
+    - Precondition: `fullname` should not be nil.
+    - Requires: Both first and last name should be parts of the full name, separated with a *space character*.
+    - Todo: Support middle name in the next version.
+    - Warning: A wonderful **crash** will be the result of a `nil` argument.
+    - Version: 1.1
+    - Author: Myself Only
+    - Note: Too much documentation for such a small function.
+ */
+func breakFullName(fullname: String) -&gt; (firstname: String, lastname: String) {
+    let fullnameInPieces = fullname.componentsSeparatedByString(" ")
+    return (fullnameInPieces[0], fullnameInPieces[1])
+}
+</code></pre>
+
+<p>It would produce the following documentation in XCode :</p>
+
+<p><img src="https://www.appcoda.com/wp-content/uploads/2016/05/t52_10_keywords5.png" alt="enter image description here"></p>
+
+<p>Note that the Jazzy-generated doc will look different, but if something renders well within XCode, it should also render properly in the doc.</p>
+
+<p>Using backquotes ` around your own symbols names will produce a link to this symbol&rsquo;s documentation (Jazzy only).</p>
+
+<p>See <a href="https://www.appcoda.com/swift-markdown/">more advanced examples</a>.</p>
+<h2 id='jazzy-usage' class='heading'>Jazzy usage</h2>
+<h3 id='prerequisites' class='heading'>Prerequisites</h3>
+
+<blockquote>
+<p>[sudo] gem install jazzy</p>
+</blockquote>
+<h3 id='review-configuration' class='heading'>Review configuration</h3>
+
+<p>Check out the <code>.jazzy.yaml</code> config file. Here you will see all the options that are passed to Jazzy when invoked.</p>
+
+<p>Pay attention to the <code>custom_categories</code> part. Since we want to group our documented entities depending on their story and not their type, we specify in which custom category each symbol will go.</p>
+
+<p>If you implement new symbols and they are not referenced in the <code>.jazzy.yaml</code> file, they will go to the <code>Other ...</code> categories.</p>
+<h3 id='add-markdown-files' class='heading'>Add Markdown files</h3>
+
+<p>Every <code>.md</code> file you put in the <code>docs/Markdown/</code> folder will result in a new symbol.</p>
+
+<p>The rules about <code>custom_categories</code> also apply with these files.</p>
+<h3 id='generate-the-doc' class='heading'>Generate the doc</h3>
+
+<p>To generate the documentation, juste type the following command from the project&rsquo;s root folder (the same folder that contains <code>.jazzy.yaml</code>) :</p>
+
+<blockquote>
+<p>jazzy</p>
+</blockquote>
+
+<p>This can be pretty long since Jazzy builds the whole workspace every time.</p>
+
+<p>Once completed, you will find the generated docs in <code>docs/swift/</code>.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2020 <a class="link" href="https://jeansarda.com" target="_blank" rel="external">Jean Sarda</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

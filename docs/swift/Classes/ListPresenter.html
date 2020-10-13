@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ListPresenter Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ListPresenter" class="dashAnchor"></a>
+    <a title="ListPresenter Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">LeBonCoin 1 Docs</a> (43% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">LeBonCoin Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ListPresenter Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../documentation.html">Documentation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Views.html">Views</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ListingTableViewCell.html">ListingTableViewCell</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Models.html">Models</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Listing.html">Listing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Listing/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ListingViewModel.html">ListingViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Images.html">Images</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Category.html">Category</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../List%20Module.html">List Module</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ListViewController.html">ListViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListInteractor.html">ListInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListPresenter.html">ListPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListRouter.html">ListRouter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListPresenterToViewProtocol.html">ListPresenterToViewProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListInteractorToPresenterProtocol.html">ListInteractorToPresenterProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListPresenterToInteractorProtocol.html">ListPresenterToInteractorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListViewToPresenterProtocol.html">ListViewToPresenterProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListPresenterToRouterProtocol.html">ListPresenterToRouterProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NamedColors.html">NamedColors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SceneDelegate.html">SceneDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DMSansFont.html">DMSansFont</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Other%20Protocols.html#/s:9LeBonCoin15ListingProtocolP">ListingProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ListPresenter</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">ListPresenter</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ListViewToPresenterProtocol.html">ListViewToPresenterProtocol</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ListPresenter</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ListInteractorToPresenterProtocol.html">ListInteractorToPresenterProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>The Presenter for the List module.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC4viewAA0dE14ToViewProtocol_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/view" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC4viewAA0dE14ToViewProtocol_pSgvp">view</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reference to the view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">view</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ListPresenterToViewProtocol.html">ListPresenterToViewProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC10interactorAA0dE20ToInteractorProtocol_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/interactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC10interactorAA0dE20ToInteractorProtocol_pSgvp">interactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reference to the interactor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">interactor</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ListPresenterToInteractorProtocol.html">ListPresenterToInteractorProtocol</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC6routerAA0dE16ToRouterProtocol_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/router" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC6routerAA0dE16ToRouterProtocol_pSgvp">router</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reference to the router.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">router</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ListPresenterToRouterProtocol.html">ListPresenterToRouterProtocol</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC8listingsSayAA7ListingVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/listings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC8listingsSayAA7ListingVGSgvp">listings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The fetched listings for the current module</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">listings</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Listing.html">Listing</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC10categoriesSayAA8CategoryVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/categories" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC10categoriesSayAA8CategoryVGSgvp">categories</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The fetched categories</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">categories</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Category.html">Category</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC4view10interactor6routerAcA0dE14ToViewProtocol_pSg_AA0dei10InteractorK0_pSgAA0dei6RouterK0_pSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(view:interactor:router:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC4view10interactor6routerAcA0dE14ToViewProtocol_pSg_AA0dei10InteractorK0_pSgAA0dei6RouterK0_pSgtcfc">init(view:<wbr>interactor:<wbr>router:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a <code>ListPresenter</code> from a view, interactor and router.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ListPresenterToViewProtocol.html">ListPresenterToViewProtocol</a></span><span class="p">?,</span> <span class="nv">interactor</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ListPresenterToInteractorProtocol.html">ListPresenterToInteractorProtocol</a></span><span class="p">?,</span> <span class="nv">router</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ListPresenterToRouterProtocol.html">ListPresenterToRouterProtocol</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC11viewDidLoadyyF"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC11viewDidLoadyyF">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called by the view within its own <code>viewDidLoad</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC15fetchCategoriesyyF"></a>
+                    <a name="//apple_ref/swift/Method/fetchCategories()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC15fetchCategoriesyyF">fetchCategories()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called to load categories from the API. Also called by <code>viewDidLoad</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchCategories</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC13fetchListingsyyF"></a>
+                    <a name="//apple_ref/swift/Method/fetchListings()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC13fetchListingsyyF">fetchListings()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called to load listings from the API. Also called by <code>viewDidLoad</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchListings</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC16numberOfListingsSiyF"></a>
+                    <a name="//apple_ref/swift/Method/numberOfListings()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC16numberOfListingsSiyF">numberOfListings()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called by the view when the table needs to know the amount of cells to display</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">numberOfListings</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC7listing2atAA16ListingViewModelVSg10Foundation9IndexPathV_tF"></a>
+                    <a name="//apple_ref/swift/Method/listing(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC7listing2atAA16ListingViewModelVSg10Foundation9IndexPathV_tF">listing(at:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the listing for the specified index.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">listing</span><span class="p">(</span><span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/ListingViewModel.html">ListingViewModel</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC13listingTapped2aty10Foundation9IndexPathV_tF"></a>
+                    <a name="//apple_ref/swift/Method/listingTapped(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC13listingTapped2aty10Foundation9IndexPathV_tF">listingTapped(at:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A listing has been selected, so navigate to the detail page</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">listingTapped</span><span class="p">(</span><span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC18getListingsSuccess8responseySayAA7ListingVG_tF"></a>
+                    <a name="//apple_ref/swift/Method/getListingsSuccess(response:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC18getListingsSuccess8responseySayAA7ListingVG_tF">getListingsSuccess(response:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called on fetch listings success</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getListingsSuccess</span><span class="p">(</span><span class="nv">response</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Listing.html">Listing</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin13ListPresenterC16getListingsError5errorys0H0_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/getListingsError(error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin13ListPresenterC16getListingsError5errorys0H0_p_tF">getListingsError(error:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called on fetch listings failure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getListingsError</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin33ListInteractorToPresenterProtocolP20getCategoriesSuccess8responseySayAA8CategoryVG_tF"></a>
+                    <a name="//apple_ref/swift/Method/getCategoriesSuccess(response:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin33ListInteractorToPresenterProtocolP20getCategoriesSuccess8responseySayAA8CategoryVG_tF">getCategoriesSuccess(response:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getCategoriesSuccess</span><span class="p">(</span><span class="nv">response</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Category.html">Category</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin33ListInteractorToPresenterProtocolP18getCategoriesError5errorys0K0_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/getCategoriesError(error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin33ListInteractorToPresenterProtocolP18getCategoriesError5errorys0K0_p_tF">getCategoriesError(error:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getCategoriesError</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2020 <a class="link" href="https://jeansarda.com" target="_blank" rel="external">Jean Sarda</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

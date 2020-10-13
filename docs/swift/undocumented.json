@@ -1,0 +1,551 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Helpers/NamedColors.swift",
+      "line": 10,
+      "symbol": "NamedColors",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Helpers/NamedColors.swift",
+      "line": 11,
+      "symbol": "NamedColors.leBonBackground",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Helpers/NamedColors.swift",
+      "line": 12,
+      "symbol": "NamedColors.leBonElement",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Helpers/NamedColors.swift",
+      "line": 13,
+      "symbol": "NamedColors.leBonConstrast",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Helpers/NamedColors.swift",
+      "line": 14,
+      "symbol": "NamedColors.leBonAccent",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Helpers/NamedColors.swift",
+      "line": 15,
+      "symbol": "NamedColors.leBonUrgent",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Category.swift",
+      "line": 10,
+      "symbol": "Category",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Category.swift",
+      "line": 11,
+      "symbol": "Category.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Category.swift",
+      "line": 12,
+      "symbol": "Category.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Category.swift",
+      "line": 14,
+      "symbol": "Category.color()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Images.swift",
+      "line": 10,
+      "symbol": "Images",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Images.swift",
+      "line": 11,
+      "symbol": "Images.small",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Images.swift",
+      "line": 12,
+      "symbol": "Images.thumb",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 10,
+      "symbol": "ListingProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 16,
+      "symbol": "Listing",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 18,
+      "symbol": "Listing.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 19,
+      "symbol": "Listing.CodingKeys.id",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 20,
+      "symbol": "Listing.CodingKeys.category",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 21,
+      "symbol": "Listing.CodingKeys.title",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 22,
+      "symbol": "Listing.CodingKeys.description",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 23,
+      "symbol": "Listing.CodingKeys.price",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 24,
+      "symbol": "Listing.CodingKeys.images",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 25,
+      "symbol": "Listing.CodingKeys.creationDate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 26,
+      "symbol": "Listing.CodingKeys.isUrgent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 29,
+      "symbol": "Listing.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 30,
+      "symbol": "Listing.category",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 31,
+      "symbol": "Listing.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 32,
+      "symbol": "Listing.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 33,
+      "symbol": "Listing.price",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 34,
+      "symbol": "Listing.images",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 35,
+      "symbol": "Listing.creationDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 36,
+      "symbol": "Listing.isUrgent",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/Listing.swift",
+      "line": 38,
+      "symbol": "Listing.categoryName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/ListingViewModel.swift",
+      "line": 10,
+      "symbol": "ListingViewModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/ListingViewModel.swift",
+      "line": 12,
+      "symbol": "ListingViewModel.listing",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/ListingViewModel.swift",
+      "line": 13,
+      "symbol": "ListingViewModel.categories",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/ListingViewModel.swift",
+      "line": 15,
+      "symbol": "ListingViewModel.listingTitle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/ListingViewModel.swift",
+      "line": 19,
+      "symbol": "ListingViewModel.listingPrice()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/ListingViewModel.swift",
+      "line": 23,
+      "symbol": "ListingViewModel.listingDescription()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/ListingViewModel.swift",
+      "line": 27,
+      "symbol": "ListingViewModel.smallImageUrl()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/ListingViewModel.swift",
+      "line": 31,
+      "symbol": "ListingViewModel.thumbImageUrl()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/ListingViewModel.swift",
+      "line": 35,
+      "symbol": "ListingViewModel.urgentString()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/ListingViewModel.swift",
+      "line": 39,
+      "symbol": "ListingViewModel.category()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Models/ListingViewModel.swift",
+      "line": 43,
+      "symbol": "ListingViewModel.init(listing:categories:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListInteractor.swift",
+      "line": 30,
+      "symbol": "ListInteractor.loadMockListings()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListInteractor.swift",
+      "line": 43,
+      "symbol": "ListInteractor.loadMockCategories()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 10,
+      "symbol": "ListViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 12,
+      "symbol": "ListViewController.presenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 14,
+      "symbol": "ListViewController.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 27,
+      "symbol": "ListViewController.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 31,
+      "symbol": "ListViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 35,
+      "symbol": "ListViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 50,
+      "symbol": "ListViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 52,
+      "symbol": "ListViewController.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 57,
+      "symbol": "ListViewController.tableView(_:heightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 63,
+      "symbol": "ListViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 65,
+      "symbol": "ListViewController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 70,
+      "symbol": "ListViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 74,
+      "symbol": "ListViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/ListViewController.swift",
+      "line": 81,
+      "symbol": "ListViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/Views/ListingTableViewCell.swift",
+      "line": 10,
+      "symbol": "ListingTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/Views/ListingTableViewCell.swift",
+      "line": 12,
+      "symbol": "ListingTableViewCell.tableViewReuseIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/Views/ListingTableViewCell.swift",
+      "line": 14,
+      "symbol": "ListingTableViewCell.init(style:reuseIdentifier:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/Views/ListingTableViewCell.swift",
+      "line": 19,
+      "symbol": "ListingTableViewCell.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Modules/List/Views/ListingTableViewCell.swift",
+      "line": 24,
+      "symbol": "ListingTableViewCell.commonInit()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Resources/AppDelegate.swift",
+      "line": 11,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Resources/AppDelegate.swift",
+      "line": 13,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Resources/AppDelegate.swift",
+      "line": 15,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Resources/AppDelegate.swift",
+      "line": 31,
+      "symbol": "AppDelegate.application(_:configurationForConnecting:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Resources/AppDelegate.swift",
+      "line": 38,
+      "symbol": "AppDelegate.application(_:didDiscardSceneSessions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Resources/SceneDelegate.swift",
+      "line": 11,
+      "symbol": "SceneDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Resources/SceneDelegate.swift",
+      "line": 13,
+      "symbol": "SceneDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Resources/SceneDelegate.swift",
+      "line": 15,
+      "symbol": "SceneDelegate.scene(_:willConnectTo:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Resources/SceneDelegate.swift",
+      "line": 26,
+      "symbol": "SceneDelegate.sceneDidDisconnect(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Resources/SceneDelegate.swift",
+      "line": 33,
+      "symbol": "SceneDelegate.sceneDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Resources/SceneDelegate.swift",
+      "line": 38,
+      "symbol": "SceneDelegate.sceneWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Resources/SceneDelegate.swift",
+      "line": 43,
+      "symbol": "SceneDelegate.sceneWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/donkey/Workspace/LeBonCoin/LeBonCoin/Resources/SceneDelegate.swift",
+      "line": 48,
+      "symbol": "SceneDelegate.sceneDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/donkey/Workspace/LeBonCoin"
+}

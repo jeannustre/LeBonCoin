@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ListInteractor Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ListInteractor" class="dashAnchor"></a>
+    <a title="ListInteractor Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">LeBonCoin 1 Docs</a> (43% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">LeBonCoin Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ListInteractor Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../documentation.html">Documentation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Views.html">Views</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ListingTableViewCell.html">ListingTableViewCell</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Models.html">Models</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Listing.html">Listing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Listing/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ListingViewModel.html">ListingViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Images.html">Images</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Category.html">Category</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../List%20Module.html">List Module</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ListViewController.html">ListViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListInteractor.html">ListInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListPresenter.html">ListPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListRouter.html">ListRouter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListPresenterToViewProtocol.html">ListPresenterToViewProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListInteractorToPresenterProtocol.html">ListInteractorToPresenterProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListPresenterToInteractorProtocol.html">ListPresenterToInteractorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListViewToPresenterProtocol.html">ListViewToPresenterProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListPresenterToRouterProtocol.html">ListPresenterToRouterProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NamedColors.html">NamedColors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SceneDelegate.html">SceneDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DMSansFont.html">DMSansFont</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Other%20Protocols.html#/s:9LeBonCoin15ListingProtocolP">ListingProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ListInteractor</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">ListInteractor</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ListPresenterToInteractorProtocol.html">ListPresenterToInteractorProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>The interactor for the List module.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin14ListInteractorC9presenterAA0dE19ToPresenterProtocol_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/presenter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin14ListInteractorC9presenterAA0dE19ToPresenterProtocol_pSgvp">presenter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reference to the module&rsquo;s presenter.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">presenter</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ListInteractorToPresenterProtocol.html">ListInteractorToPresenterProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin14ListInteractorC11getListingsyyF"></a>
+                    <a name="//apple_ref/swift/Method/getListings()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin14ListInteractorC11getListingsyyF">getListings()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches the listings.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getListings</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin14ListInteractorC13getCategoriesyyF"></a>
+                    <a name="//apple_ref/swift/Method/getCategories()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin14ListInteractorC13getCategoriesyyF">getCategories()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches categories.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getCategories</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin14ListInteractorC16loadMockListings33_2EFA61E473FEEFEEE8C86AD3686717BFLLSayAA7ListingVGyF"></a>
+                    <a name="//apple_ref/swift/Method/loadMockListings()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin14ListInteractorC16loadMockListings33_2EFA61E473FEEFEEE8C86AD3686717BFLLSayAA7ListingVGyF">loadMockListings()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">loadMockListings</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/Listing.html">Listing</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9LeBonCoin14ListInteractorC18loadMockCategories33_2EFA61E473FEEFEEE8C86AD3686717BFLLSayAA8CategoryVGyF"></a>
+                    <a name="//apple_ref/swift/Method/loadMockCategories()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9LeBonCoin14ListInteractorC18loadMockCategories33_2EFA61E473FEEFEEE8C86AD3686717BFLLSayAA8CategoryVGyF">loadMockCategories()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">loadMockCategories</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/Category.html">Category</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2020 <a class="link" href="https://jeansarda.com" target="_blank" rel="external">Jean Sarda</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

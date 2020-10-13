@@ -1,0 +1,39 @@
+module: LeBonCoin
+author: JeanSarda
+author_url: 'https://jeansarda.com'
+copyright: '© 2020 [Jean Sarda](https://jeansarda.com)'
+min_acl: private
+theme: apple
+swift_version: 5.3
+xcodebuild_arguments:
+    - '-project'
+    - LeBonCoin.xcodeproj
+    - '-scheme'
+    - LeBonCoin
+documentation: docs/Markdown/*.md
+output: docs/swift
+module_version: 1
+custom_categories:
+  - name: Guides
+    children:
+    - Documentation
+  - name: Views
+    children:
+    - ListingTableViewCell
+  - name: Models
+    children:
+    - Listing
+    - ListingViewModel
+    - Images
+    - Category
+  - name: List Module
+    children:
+    - ListViewController
+    - ListInteractor
+    - ListPresenter
+    - ListRouter
+    - ListPresenterToViewProtocol
+    - ListInteractorToPresenterProtocol
+    - ListPresenterToInteractorProtocol
+    - ListViewToPresenterProtocol
+    - ListPresenterToRouterProtocol
