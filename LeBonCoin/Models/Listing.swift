@@ -35,7 +35,5 @@ struct Listing: Codable {
     var creationDate: Date?
     var isUrgent: Bool
     
-    var categoryName: String?
-    
 }
 

@@ -63,7 +63,8 @@ extension ListViewController: UITableViewDelegate {
 extension ListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ListingTableViewCell.tableViewReuseIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: ListingTableViewCell.tableViewReuseIdentifier, for: indexPath) as! ListingTableViewCell
+        cell.configure(with: presenter?.listing(at: indexPath))
         return cell
     }
     
