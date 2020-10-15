@@ -44,6 +44,11 @@ class ListViewController: UIViewController {
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
+    
+    private func configureNavBarButtons() {
+        let filterButton = presenter?.getFilterButton()
+        navigationItem.setRightBarButton(filterButton, animated: true)
+    }
 
 }
 
@@ -84,11 +89,16 @@ extension ListViewController: ListPresenterToViewProtocol {
     /// Called by the presenter when listings have been fetched.
     func gotListings() {
         tableView.reloadData()
+        configureNavBarButtons()
     }
     
     /// Called by the presenter when listings couldn't be fetched.
     func getListingsError() {
         
+    }
+    
+    func presentController(_ viewController: UIViewController) {
+        present(viewController, animated: true, completion: nil)
     }
     
 }

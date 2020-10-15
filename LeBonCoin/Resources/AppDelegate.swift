@@ -19,9 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Look into SceneDelegate.swift for the Scene-based init
         } else {
             self.window = UIWindow(frame: UIScreen.main.bounds)
-            self.window?.rootViewController = ListRouter.createModule()
+            self.window?.rootViewController = NavigationRouter.createModule()
             self.window?.makeKeyAndVisible()
         }
+        
+        UIView.appearance().tintColor = NamedColors.leBonAccent
+        UINavigationBar.appearance().barTintColor = NamedColors.leBonBackground
         
         return true
     }

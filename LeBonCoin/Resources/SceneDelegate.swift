@@ -19,8 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ListRouter.createModule()
+        window?.rootViewController = NavigationRouter.createModule()
         window?.makeKeyAndVisible()
+        
+        UIView.appearance().tintColor = NamedColors.leBonAccent
+        UINavigationBar.appearance().barTintColor = NamedColors.leBonBackground
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

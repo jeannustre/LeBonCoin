@@ -14,6 +14,14 @@
 		8305A4732533506900DD1179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8305A4712533506900DD1179 /* LaunchScreen.storyboard */; };
 		8305A47E2533506900DD1179 /* LeBonCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A47D2533506900DD1179 /* LeBonCoinTests.swift */; };
 		8305A4892533506900DD1179 /* LeBonCoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A4882533506900DD1179 /* LeBonCoinUITests.swift */; };
+		83B5CE5B2538ED3B00E98BD8 /* Navigation.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83B5CE542538ED3B00E98BD8 /* Navigation.strings */; };
+		83B5CE5C2538ED3B00E98BD8 /* NavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5CE552538ED3B00E98BD8 /* NavigationPresenter.swift */; };
+		83B5CE5D2538ED3B00E98BD8 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5CE562538ED3B00E98BD8 /* NavigationRouter.swift */; };
+		83B5CE5E2538ED3B00E98BD8 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5CE572538ED3B00E98BD8 /* NavigationViewController.swift */; };
+		83B5CE5F2538ED3B00E98BD8 /* NavigationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5CE582538ED3B00E98BD8 /* NavigationProtocols.swift */; };
+		83B5CE602538ED3B00E98BD8 /* NavigationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5CE592538ED3B00E98BD8 /* NavigationInteractor.swift */; };
+		83B5CE612538ED3B00E98BD8 /* NavigationStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5CE5A2538ED3B00E98BD8 /* NavigationStrings.swift */; };
+		83B5CE672538EF0000E98BD8 /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5CE662538EF0000E98BD8 /* FilterButton.swift */; };
 		83D1E85B253632BC004AF8EB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D1E85A253632BC004AF8EB /* Colors.xcassets */; };
 		83D1E860253634B7004AF8EB /* NamedColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1E85F253634B7004AF8EB /* NamedColors.swift */; };
 		83D1E865253635AE004AF8EB /* ListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1E864253635AE004AF8EB /* ListingViewModel.swift */; };
@@ -63,6 +71,14 @@
 		8305A4842533506900DD1179 /* LeBonCoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeBonCoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8305A4882533506900DD1179 /* LeBonCoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeBonCoinUITests.swift; sourceTree = "<group>"; };
 		8305A48A2533506900DD1179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B5CE542538ED3B00E98BD8 /* Navigation.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Navigation.strings; sourceTree = "<group>"; };
+		83B5CE552538ED3B00E98BD8 /* NavigationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPresenter.swift; sourceTree = "<group>"; };
+		83B5CE562538ED3B00E98BD8 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		83B5CE572538ED3B00E98BD8 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		83B5CE582538ED3B00E98BD8 /* NavigationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProtocols.swift; sourceTree = "<group>"; };
+		83B5CE592538ED3B00E98BD8 /* NavigationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationInteractor.swift; sourceTree = "<group>"; };
+		83B5CE5A2538ED3B00E98BD8 /* NavigationStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStrings.swift; sourceTree = "<group>"; };
+		83B5CE662538EF0000E98BD8 /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		83D1E85A253632BC004AF8EB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		83D1E85F253634B7004AF8EB /* NamedColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedColors.swift; sourceTree = "<group>"; };
 		83D1E864253635AE004AF8EB /* ListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewModel.swift; sourceTree = "<group>"; };
@@ -179,6 +195,7 @@
 		8305A4A925335B2500DD1179 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				83B5CE532538ED2700E98BD8 /* Navigation */,
 				8305A4AA25335B3000DD1179 /* List */,
 			);
 			path = Modules;
@@ -206,6 +223,20 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		83B5CE532538ED2700E98BD8 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				83B5CE542538ED3B00E98BD8 /* Navigation.strings */,
+				83B5CE552538ED3B00E98BD8 /* NavigationPresenter.swift */,
+				83B5CE562538ED3B00E98BD8 /* NavigationRouter.swift */,
+				83B5CE572538ED3B00E98BD8 /* NavigationViewController.swift */,
+				83B5CE582538ED3B00E98BD8 /* NavigationProtocols.swift */,
+				83B5CE592538ED3B00E98BD8 /* NavigationInteractor.swift */,
+				83B5CE5A2538ED3B00E98BD8 /* NavigationStrings.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		83D1E8732536366F004AF8EB /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +256,7 @@
 			children = (
 				83D1E87E25363995004AF8EB /* ListingTableViewCell.swift */,
 				83D1E8AC25365B64004AF8EB /* CategoryView.swift */,
+				83B5CE662538EF0000E98BD8 /* FilterButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -362,6 +394,7 @@
 			files = (
 				83D1E85B253632BC004AF8EB /* Colors.xcassets in Resources */,
 				8305A4732533506900DD1179 /* LaunchScreen.storyboard in Resources */,
+				83B5CE5B2538ED3B00E98BD8 /* Navigation.strings in Resources */,
 				8305A4702533506900DD1179 /* Assets.xcassets in Resources */,
 				83D1E8A2253642E0004AF8EB /* TestCategories.json in Resources */,
 				83D1E89D253642D3004AF8EB /* TestData.json in Resources */,
@@ -390,17 +423,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				83DE095825339DEF0063F4ED /* ListInteractor.swift in Sources */,
+				83B5CE5F2538ED3B00E98BD8 /* NavigationProtocols.swift in Sources */,
+				83B5CE5C2538ED3B00E98BD8 /* NavigationPresenter.swift in Sources */,
 				83DE095D25339DF80063F4ED /* ListRouter.swift in Sources */,
 				83D1E86A253635E7004AF8EB /* Images.swift in Sources */,
 				83DE09632533A0D50063F4ED /* Listing.swift in Sources */,
 				83D1E87F25363995004AF8EB /* ListingTableViewCell.swift in Sources */,
 				83D1E860253634B7004AF8EB /* NamedColors.swift in Sources */,
 				83D1E88425363A00004AF8EB /* DMSansFont.swift in Sources */,
+				83B5CE5E2538ED3B00E98BD8 /* NavigationViewController.swift in Sources */,
+				83B5CE602538ED3B00E98BD8 /* NavigationInteractor.swift in Sources */,
+				83B5CE5D2538ED3B00E98BD8 /* NavigationRouter.swift in Sources */,
 				83DE095325339DE60063F4ED /* ListPresenter.swift in Sources */,
 				8305A46B2533506700DD1179 /* ListViewController.swift in Sources */,
+				83B5CE612538ED3B00E98BD8 /* NavigationStrings.swift in Sources */,
 				8305A4672533506700DD1179 /* AppDelegate.swift in Sources */,
 				8305A4692533506700DD1179 /* SceneDelegate.swift in Sources */,
 				83D1E8B225365BD2004AF8EB /* AlmostKingfisher.swift in Sources */,
+				83B5CE672538EF0000E98BD8 /* FilterButton.swift in Sources */,
 				83DE094E25339DDC0063F4ED /* ListProtocols.swift in Sources */,
 				83D1E865253635AE004AF8EB /* ListingViewModel.swift in Sources */,
 				83D1E86F253635F6004AF8EB /* Category.swift in Sources */,

@@ -13,6 +13,8 @@ protocol ListPresenterToViewProtocol: class {
     func gotListings()
     /// Called when listings couldn't be fetched
     func getListingsError()
+    /// Called when the presenter wants to ask the view to present a controller.
+    func presentController(_ viewController: UIViewController)
 }
 
 /// Delegates from the interactor (api/storage) to the presenter (business rules)
@@ -55,6 +57,8 @@ protocol ListViewToPresenterProtocol: class {
     func listing(at indexPath: IndexPath) -> ListingViewModel?
     /// Tells the presenter a Listing has been tapped
     func listingTapped(at indexPath: IndexPath)
+    /// Returns a `FilterButton` for the current categories.
+    func getFilterButton() -> FilterButton
 }
 
 /// Delegates from the presenter (business rules) to the router (navigation)

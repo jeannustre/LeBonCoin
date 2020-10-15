@@ -20,6 +20,8 @@ final class ListPresenter: ListViewToPresenterProtocol {
     var listings: [Listing]?
     /// The fetched categories
     var categories: [Category]?
+    /// The currently selected category
+    var currentCategory: Category?
 
     /// Initializes a `ListPresenter` from a view, interactor and router.
     init(view: ListPresenterToViewProtocol?, interactor: ListPresenterToInteractorProtocol?, router: ListPresenterToRouterProtocol?) {
@@ -59,6 +61,13 @@ final class ListPresenter: ListViewToPresenterProtocol {
     func listingTapped(at indexPath: IndexPath) {
 
     }
+    
+    /// Returns a `FilterButton` initialized  from the current categories.
+    func getFilterButton() -> FilterButton {
+        let filterButton: FilterButton = FilterButton(categories: categories ?? [])
+        filterButton.delegate = self
+        return filterButton
+    }
   
 }
 
@@ -82,6 +91,22 @@ extension ListPresenter: ListInteractorToPresenterProtocol {
     
     func getCategoriesError(error: Error) {
         view?.getListingsError()
+    }
+    
+}
+
+extension ListPresenter: FilterButtonDelegate {
+    
+    func filterButton(filterButton: FilterButton, didSelectCategory category: Category?) {
+        currentCategory = category
+    }
+    
+    func filterButtonDidSelectAllCategories(filterButton: FilterButton) {
+        currentCategory = nil
+    }
+    
+    func filterButton(filterButton: FilterButton, asksToPresentAlertController controller: UIAlertController) {
+        view?.presentController(controller)
     }
     
 }
