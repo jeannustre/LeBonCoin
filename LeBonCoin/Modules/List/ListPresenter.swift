@@ -22,6 +22,15 @@ final class ListPresenter: ListViewToPresenterProtocol {
     var categories: [Category]?
     /// The currently selected category
     var currentCategory: Category?
+    
+    var safeListings: [Listing] {
+        var l = self.listings
+        l?.sort(by: { $0.isUrgent && !$1.isUrgent })
+        if let filterCategory = currentCategory {
+            return l?.filter({ $0.category == filterCategory.id }) ?? []
+        }
+        return l ?? []
+    }
 
     /// Initializes a `ListPresenter` from a view, interactor and router.
     init(view: ListPresenterToViewProtocol?, interactor: ListPresenterToInteractorProtocol?, router: ListPresenterToRouterProtocol?) {
@@ -48,12 +57,12 @@ final class ListPresenter: ListViewToPresenterProtocol {
     
     /// Called by the view when the table needs to know the amount of cells to display
     func numberOfListings() -> Int {
-        return listings?.count ?? 0
+        return safeListings.count
     }
     
     /// Returns the listing for the specified index.
     func listing(at indexPath: IndexPath) -> ListingViewModel? {
-        guard let listing = listings?[indexPath.row] else { return nil }
+        let listing = safeListings[indexPath.row]
         return ListingViewModel(listing: listing, categories: categories)
     }
     
