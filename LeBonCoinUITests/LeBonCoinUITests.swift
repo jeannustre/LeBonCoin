@@ -7,28 +7,57 @@
 
 import XCTest
 
-class LeBonCoinUITests: XCTestCase {
+class LeBonUITestCase: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var app: XCUIApplication!
 
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+    override func setUp() {
+        super.setUp()
+
         continueAfterFailure = false
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
+        app = XCUIApplication()
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+        for arg in self.launchArguments() {
+            app.launchArguments.append(arg)
+        }
         app.launch()
+    }
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    override func tearDown() {
+        super.tearDown()
+    }
+    
+    func launchArguments() -> [String] {
+        return [
+            "-AppleLanguages",
+            "(en)",
+            "-AppleLocale",
+            "\"en_US\"",
+            "--uitesting"
+        ]
+    }
+}
+
+class ListUITests: LeBonUITestCase {
+    
+    override func setUp() {
+        app = XCUIApplication()
+        
+        continueAfterFailure = false
+    }
+
+    override func tearDown() {
+        app = nil
+    }
+
+    func testGuitarIsNotVisibleByDefault() throws {
+        app.launch()
+        
+        let guitarListingTitle = app.staticTexts["Guitare électro acoustique"]
+        XCTAssertFalse(guitarListingTitle.exists, "The listing 'Guitare électro acoustique' should not be visible because we have not scrolled yet.")
+        app.swipeUp()
+        XCTAssert(guitarListingTitle.exists, "The listing 'Guitare électro acoustique' should now be visible because we have scrolled.")
     }
 
     func testLaunchPerformance() throws {

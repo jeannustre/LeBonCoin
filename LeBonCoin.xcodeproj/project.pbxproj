@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72BBDBA0253AE4B600E04E72 /* FontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BBDB9F253AE4B600E04E72 /* FontTests.swift */; };
+		72BBDBA4253AE71B00E04E72 /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83D1E877253636AC004AF8EB /* DMSans-Bold.ttf */; };
+		72BBDBA8253AE71D00E04E72 /* DMSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83D1E874253636AB004AF8EB /* DMSans-BoldItalic.ttf */; };
+		72BBDBAC253AE71F00E04E72 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83D1E875253636AB004AF8EB /* DMSans-Medium.ttf */; };
+		72BBDBB0253AE72200E04E72 /* DMSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83D1E878253636AC004AF8EB /* DMSans-MediumItalic.ttf */; };
+		72BBDBB4253AE72500E04E72 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83D1E879253636AC004AF8EB /* DMSans-Regular.ttf */; };
+		72BBDBB8253AE72700E04E72 /* DMSans-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83D1E876253636AB004AF8EB /* DMSans-RegularItalic.ttf */; };
+		72BBDBBD253AE7BA00E04E72 /* FilterButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BBDBBC253AE7BA00E04E72 /* FilterButtonTests.swift */; };
+		72BBDBC2253AE93E00E04E72 /* CategoryViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BBDBC1253AE93E00E04E72 /* CategoryViewTests.swift */; };
 		8305A4672533506700DD1179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A4662533506700DD1179 /* AppDelegate.swift */; };
 		8305A4692533506700DD1179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A4682533506700DD1179 /* SceneDelegate.swift */; };
 		8305A46B2533506700DD1179 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A46A2533506700DD1179 /* ListViewController.swift */; };
 		8305A4702533506900DD1179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8305A46F2533506900DD1179 /* Assets.xcassets */; };
 		8305A4732533506900DD1179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8305A4712533506900DD1179 /* LaunchScreen.storyboard */; };
-		8305A47E2533506900DD1179 /* LeBonCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A47D2533506900DD1179 /* LeBonCoinTests.swift */; };
 		8305A4892533506900DD1179 /* LeBonCoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A4882533506900DD1179 /* LeBonCoinUITests.swift */; };
 		833D7C572539E50D00A1DA42 /* ListingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D7C562539E50D00A1DA42 /* ListingViewModelTests.swift */; };
 		833D7C5C253A1BAE00A1DA42 /* DecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D7C5B253A1BAE00A1DA42 /* DecodingTests.swift */; };
@@ -60,6 +68,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72BBDB9F253AE4B600E04E72 /* FontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTests.swift; sourceTree = "<group>"; };
+		72BBDBBC253AE7BA00E04E72 /* FilterButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonTests.swift; sourceTree = "<group>"; };
+		72BBDBC1253AE93E00E04E72 /* CategoryViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewTests.swift; sourceTree = "<group>"; };
 		8305A4632533506700DD1179 /* LeBonCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeBonCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8305A4662533506700DD1179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8305A4682533506700DD1179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +79,6 @@
 		8305A4722533506900DD1179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8305A4742533506900DD1179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8305A4792533506900DD1179 /* LeBonCoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeBonCoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8305A47D2533506900DD1179 /* LeBonCoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeBonCoinTests.swift; sourceTree = "<group>"; };
 		8305A47F2533506900DD1179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8305A4842533506900DD1179 /* LeBonCoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeBonCoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8305A4882533506900DD1179 /* LeBonCoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeBonCoinUITests.swift; sourceTree = "<group>"; };
@@ -167,10 +177,12 @@
 		8305A47C2533506900DD1179 /* LeBonCoinTests */ = {
 			isa = PBXGroup;
 			children = (
-				8305A47D2533506900DD1179 /* LeBonCoinTests.swift */,
 				8305A47F2533506900DD1179 /* Info.plist */,
-				833D7C562539E50D00A1DA42 /* ListingViewModelTests.swift */,
+				72BBDBC1253AE93E00E04E72 /* CategoryViewTests.swift */,
 				833D7C5B253A1BAE00A1DA42 /* DecodingTests.swift */,
+				72BBDBBC253AE7BA00E04E72 /* FilterButtonTests.swift */,
+				72BBDB9F253AE4B600E04E72 /* FontTests.swift */,
+				833D7C562539E50D00A1DA42 /* ListingViewModelTests.swift */,
 			);
 			path = LeBonCoinTests;
 			sourceTree = "<group>";
@@ -178,8 +190,8 @@
 		8305A4872533506900DD1179 /* LeBonCoinUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8305A4882533506900DD1179 /* LeBonCoinUITests.swift */,
 				8305A48A2533506900DD1179 /* Info.plist */,
+				8305A4882533506900DD1179 /* LeBonCoinUITests.swift */,
 			);
 			path = LeBonCoinUITests;
 			sourceTree = "<group>";
@@ -401,9 +413,15 @@
 				83D1E85B253632BC004AF8EB /* Colors.xcassets in Resources */,
 				8305A4732533506900DD1179 /* LaunchScreen.storyboard in Resources */,
 				83B5CE5B2538ED3B00E98BD8 /* Navigation.strings in Resources */,
+				72BBDBB0253AE72200E04E72 /* DMSans-MediumItalic.ttf in Resources */,
+				72BBDBA8253AE71D00E04E72 /* DMSans-BoldItalic.ttf in Resources */,
 				8305A4702533506900DD1179 /* Assets.xcassets in Resources */,
 				83D1E8A2253642E0004AF8EB /* TestCategories.json in Resources */,
+				72BBDBB8253AE72700E04E72 /* DMSans-RegularItalic.ttf in Resources */,
+				72BBDBA4253AE71B00E04E72 /* DMSans-Bold.ttf in Resources */,
 				83D1E89D253642D3004AF8EB /* TestData.json in Resources */,
+				72BBDBB4253AE72500E04E72 /* DMSans-Regular.ttf in Resources */,
+				72BBDBAC253AE71F00E04E72 /* DMSans-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,8 +476,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72BBDBA0253AE4B600E04E72 /* FontTests.swift in Sources */,
 				833D7C5C253A1BAE00A1DA42 /* DecodingTests.swift in Sources */,
-				8305A47E2533506900DD1179 /* LeBonCoinTests.swift in Sources */,
+				72BBDBC2253AE93E00E04E72 /* CategoryViewTests.swift in Sources */,
+				72BBDBBD253AE7BA00E04E72 /* FilterButtonTests.swift in Sources */,
 				833D7C572539E50D00A1DA42 /* ListingViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

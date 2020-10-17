@@ -23,7 +23,9 @@ enum DMSansFont: String {
     case mediumItalic = "DMSans-MediumItalic"
     /// Returns a `UIFont` initialized from the current `DMSansFont` at the specified size, or 17 if none is provided.
     func font(size: CGFloat = 17) -> UIFont {
-        let font = UIFont(name: self.rawValue, size: size)
-        return font ?? UIFont.systemFont(ofSize: size)
+        guard let font = UIFont(name: self.rawValue, size: size) else {
+            return UIFont.systemFont(ofSize: size)
+        }
+        return font
     }
 }

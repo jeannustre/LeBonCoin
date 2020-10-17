@@ -15,16 +15,24 @@ final class ListInteractor: ListPresenterToInteractorProtocol {
     
     /// Fetches the listings.
     func getListings() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: { [weak self] in
-            self?.presenter?.getListingsSuccess(response: self?.loadMockListings() ?? [])
-        })
+        if CommandLine.arguments.contains("--uitesting") {
+            presenter?.getListingsSuccess(response: loadMockListings())
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: { [weak self] in
+                self?.presenter?.getListingsSuccess(response: self?.loadMockListings() ?? [])
+            })
+        }
     }
     
     /// Fetches categories.
     func getCategories() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: { [weak self] in
-            self?.presenter?.getCategoriesSuccess(response: self?.loadMockCategories() ?? [])
-        })
+        if CommandLine.arguments.contains("--uitesting") {
+            presenter?.getCategoriesSuccess(response: loadMockCategories())
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: { [weak self] in
+                self?.presenter?.getCategoriesSuccess(response: self?.loadMockCategories() ?? [])
+            })
+        }
     }
     
     private func loadMockListings() -> [Listing] {
