@@ -28,8 +28,9 @@ final class ListRouter: ListPresenterToRouterProtocol {
     }
 
     /// Starts navigation to the Listing Detail page.
-    func navigateToDetail(from view: ListPresenterToViewProtocol?, with listing: ListingProtocol) {
-
+    func navigateToDetail(from view: ListPresenterToViewProtocol?, with listing: ListingViewModel) {
+        let detailVC = DetailRouter.createModule(viewModel: listing)
+        view?.presentController(detailVC)
     }
     
 }

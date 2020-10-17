@@ -24,11 +24,11 @@ protocol ListInteractorToPresenterProtocol: class {
     /// Called on fetch listings success
     func getListingsSuccess(response: [Listing])
     /// Called on fetch listings failure
-    func getListingsError(error: Error)
+    func getListingsError(error: Error?)
     /// Called when categories were fetched successfully
     func getCategoriesSuccess(response: [Category])
     /// Called when categories couldn't be fetched
-    func getCategoriesError(error: Error)
+    func getCategoriesError(error: Error?)
 }
 
 /// Delegates from the presenter (business rules) to the interactor (api or storage)
@@ -68,5 +68,5 @@ protocol ListPresenterToRouterProtocol: class {
     /// Creates the module.
     static func createModule() -> ListViewController
     /// Navigate to detail module
-    func navigateToDetail(from view: ListPresenterToViewProtocol?, with listing: ListingProtocol)
+    func navigateToDetail(from view: ListPresenterToViewProtocol?, with listing: ListingViewModel)
 }

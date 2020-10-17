@@ -68,7 +68,8 @@ final class ListPresenter: ListViewToPresenterProtocol {
     
     /// A listing has been selected, so navigate to the detail page
     func listingTapped(at indexPath: IndexPath) {
-
+        guard let listing = listing(at: indexPath) else { return }
+        router?.navigateToDetail(from: view, with: listing)
     }
     
     /// Returns a `FilterButton` initialized  from the current categories.
@@ -90,7 +91,7 @@ extension ListPresenter: ListInteractorToPresenterProtocol {
     }
     
     /// Called on fetch listings failure
-    func getListingsError(error: Error) {
+    func getListingsError(error: Error?) {
         view?.getListingsError()
     }
     
@@ -98,7 +99,7 @@ extension ListPresenter: ListInteractorToPresenterProtocol {
         self.categories = response
     }
     
-    func getCategoriesError(error: Error) {
+    func getCategoriesError(error: Error?) {
         view?.getListingsError()
     }
     

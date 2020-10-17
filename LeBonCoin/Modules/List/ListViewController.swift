@@ -55,8 +55,8 @@ class ListViewController: UIViewController {
 extension ListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let vm: ListingViewModel = presenter?.listing(at: indexPath) else { return }
-        //TODO: open Detail view controller
+        tableView.deselectRow(at: indexPath, animated: true)
+        presenter?.listingTapped(at: indexPath)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -98,7 +98,8 @@ extension ListViewController: ListPresenterToViewProtocol {
     }
     
     func presentController(_ viewController: UIViewController) {
-        present(viewController, animated: true, completion: nil)
+        navigationController?.pushViewController(viewController, animated: true)
+//        present(viewController, animated: true, completion: nil)
     }
     
     /// Called by the presenter when the table should be reloaded (typically when the filter settings have changed)
