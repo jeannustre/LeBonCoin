@@ -25,6 +25,7 @@ final class ListPresenter: ListViewToPresenterProtocol {
     
     var safeListings: [Listing] {
         var l = self.listings
+        l?.sort(by: { $0.creationDate ?? Date() < $1.creationDate ?? Date() }) // There must be some less ugly way but oh well
         l?.sort(by: { $0.isUrgent && !$1.isUrgent })
         if let filterCategory = currentCategory {
             return l?.filter({ $0.category == filterCategory.id }) ?? []

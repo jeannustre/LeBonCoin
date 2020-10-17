@@ -51,14 +51,14 @@ class ListUITests: LeBonUITestCase {
         app = nil
     }
 
-    func testGuitarIsNotVisibleByDefault() {
+    func testCS4IsNotVisibleByDefault() {
         app.launch()
         
-        let guitarListingTitle = app.staticTexts["Guitare électro acoustique"]
-        XCTAssertFalse(guitarListingTitle.exists && guitarListingTitle.isHittable, "The listing 'Guitare électro acoustique' should not be visible because we have not scrolled yet.")
+        let cs4Title = app.staticTexts["After effects CS4"]
+        XCTAssertFalse(cs4Title.exists && cs4Title.isHittable, "The listing 'After effects CS4' should not be visible because we have not scrolled yet.")
         app.swipeUp()
         app.swipeUp()
-        XCTAssert(guitarListingTitle.exists && guitarListingTitle.isHittable, "The listing 'Guitare électro acoustique' should now be visible because we have scrolled.")
+        XCTAssert(cs4Title.exists && cs4Title.isHittable, "The listing 'After effects CS4' should now be visible because we have scrolled.")
     }
 
     func testFilterButtonActuallyFilters() {

@@ -94,12 +94,22 @@ extension ListViewController: ListPresenterToViewProtocol {
     
     /// Called by the presenter when listings couldn't be fetched.
     func getListingsError() {
-        
+        let alert = UIAlertController(title: ListStrings.localized("error.title"), message: ListStrings.localized("error.description"), preferredStyle: .alert)
+        let retryAction = UIAlertAction(title: ListStrings.localized("error.retry"), style: .default, handler: { [weak self] action in
+            self?.presenter?.fetchListings()
+        })
+        alert.addAction(retryAction)
+        present(alert, animated: true)
     }
     
+    /// Called when the presenter wants to ask the view to present a controller.
     func presentController(_ viewController: UIViewController) {
+        present(viewController, animated: true, completion: nil)
+    }
+    
+    /// Called when the presenter wants to ask the view to push a controller on the current navigation stack.
+    func pushController(_ viewController: UIViewController) {
         navigationController?.pushViewController(viewController, animated: true)
-//        present(viewController, animated: true, completion: nil)
     }
     
     /// Called by the presenter when the table should be reloaded (typically when the filter settings have changed)

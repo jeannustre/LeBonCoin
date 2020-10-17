@@ -1,0 +1,11 @@
+/* 
+  List.strings
+  LeBonCoin
+
+  Created by Jean Sarda on 18/10/2020.
+  
+*/
+
+"error.title" = "Oops";
+"error.description" = "We couldn't get the listings right now. Please retry again in a few seconds.";
+"error.retry" = "Retry";
