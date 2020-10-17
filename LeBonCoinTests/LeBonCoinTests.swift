@@ -9,7 +9,7 @@ import XCTest
 @testable import LeBonCoin
 
 class LeBonCoinTests: XCTestCase {
-
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -19,6 +19,8 @@ class LeBonCoinTests: XCTestCase {
     }
 
     func testExample() throws {
+        let navigationString = NavigationStrings.localized("")
+        XCTAssertEqual(navigationString.count, 0)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
