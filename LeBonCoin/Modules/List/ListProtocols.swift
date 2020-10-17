@@ -15,6 +15,8 @@ protocol ListPresenterToViewProtocol: class {
     func getListingsError()
     /// Called when the presenter wants to ask the view to present a controller.
     func presentController(_ viewController: UIViewController)
+    /// Called by the presenter when the table should be reloaded (typically when the filter settings have changed)
+    func reloadTable()
 }
 
 /// Delegates from the interactor (api/storage) to the presenter (business rules)

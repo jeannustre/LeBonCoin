@@ -108,10 +108,12 @@ extension ListPresenter: FilterButtonDelegate {
     
     func filterButton(filterButton: FilterButton, didSelectCategory category: Category?) {
         currentCategory = category
+        view?.reloadTable()
     }
     
     func filterButtonDidSelectAllCategories(filterButton: FilterButton) {
         currentCategory = nil
+        view?.reloadTable()
     }
     
     func filterButton(filterButton: FilterButton, asksToPresentAlertController controller: UIAlertController) {

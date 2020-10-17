@@ -101,4 +101,9 @@ extension ListViewController: ListPresenterToViewProtocol {
         present(viewController, animated: true, completion: nil)
     }
     
+    /// Called by the presenter when the table should be reloaded (typically when the filter settings have changed)
+    func reloadTable() {
+        tableView.reloadData()
+    }
+    
 }

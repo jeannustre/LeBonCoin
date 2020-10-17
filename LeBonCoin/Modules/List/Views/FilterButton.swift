@@ -23,6 +23,7 @@ class FilterButton: UIBarButtonItem {
         super.init()
         self.action = #selector(tappedSortButton)
         self.image = UIImage(named: "navbar-filter-button")
+        self.accessibilityIdentifier = "filter-button"
     }
     
     func updateCategories(_ categories: [Category]) {
