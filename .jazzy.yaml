@@ -37,3 +37,14 @@ custom_categories:
     - ListPresenterToInteractorProtocol
     - ListViewToPresenterProtocol
     - ListPresenterToRouterProtocol
+  - name: Detail Module
+    children:
+    - DetailViewController
+    - DetailInteractor
+    - DetailPresenter
+    - DetailRouter
+    - DetailPresenterToViewProtocol
+    - DetailInteractorToPresenterProtocol
+    - DetailPresenterToInteractorProtocol
+    - DetailViewToPresenterProtocol
+    - DetailPresenterToRouterProtocol

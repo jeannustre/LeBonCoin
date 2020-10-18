@@ -7,8 +7,10 @@
 
 import UIKit
 
+/// The view used to represent a `Listing`'s `Category`.
 class CategoryView: UIView {
     
+    /// The `Category`.
     var category: Category? {
         didSet {
             categoryLabel.text = category?.name
@@ -16,6 +18,7 @@ class CategoryView: UIView {
         }
     }
     
+    /// The label used to display the `Category`'s name.
     private lazy var categoryLabel: UILabel = {
         let categoryLabel = UILabel()
         categoryLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -25,6 +28,7 @@ class CategoryView: UIView {
         return categoryLabel
     }()
     
+    /// Initializes from a `Category`.
     init(category: Category?) {
         super.init(frame: CGRect.zero)
         backgroundColor = .cyan
@@ -41,6 +45,7 @@ class CategoryView: UIView {
         }
     }
     
+    /// IB bad
     required init?(coder: NSCoder) {
         fatalError("👎")
     }

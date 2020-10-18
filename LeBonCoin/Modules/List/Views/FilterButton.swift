@@ -7,17 +7,24 @@
 
 import UIKit
 
+/// The delegate protocol for the `FilterButton`.
 protocol FilterButtonDelegate: class {
+    /// Called by the button when a category has been selected.
     func filterButton(filterButton: FilterButton, didSelectCategory category: Category?)
+    /// Called by the button when a controller should be presented.
     func filterButton(filterButton: FilterButton, asksToPresentAlertController controller: UIAlertController)
+    /// Called by the button when no cagegory has been selected.
     func filterButtonDidSelectAllCategories(filterButton: FilterButton)
 }
 
+/// The button used in the navigation bar to filter content in the main list.
 class FilterButton: UIBarButtonItem {
-
+    /// The delegate for the `FilterButton`.
     weak var delegate: FilterButtonDelegate?
+    /// The current available categories.
     private var categories: [Category]
     
+    /// Initializes from a list of categories.
     init(categories: [Category]) {
         self.categories = categories
         super.init()
@@ -26,10 +33,12 @@ class FilterButton: UIBarButtonItem {
         self.accessibilityIdentifier = "filter-button"
     }
     
+    /// Updates the list of categories.
     func updateCategories(_ categories: [Category]) {
         self.categories = categories
     }
     
+    /// Called when the button has been tapped and the action sheet should be presented.
     @objc func tappedSortButton() {
         let actionSheet = UIAlertController(title: "Quelle catégorie voulez-vous consulter ?", message: nil, preferredStyle: .actionSheet)
         let allAction = UIAlertAction(title: "Toutes", style: .cancel, handler: { action in
@@ -45,6 +54,7 @@ class FilterButton: UIBarButtonItem {
         delegate?.filterButton(filterButton: self, asksToPresentAlertController: actionSheet)
     }
     
+    /// IB bad
     required init?(coder: NSCoder) {
         fatalError("👎")
     }

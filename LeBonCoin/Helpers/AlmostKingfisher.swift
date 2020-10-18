@@ -7,33 +7,40 @@
 
 import UIKit
 
+/// An extension used to convert an `URL` to a saveable filename.
 extension URL {
     
+    /// Creates a saveable filename by joining all path components with a `.` separator.
     func saveableFileString() -> String {
         return pathComponents.joined(separator: ".")
     }
     
 }
 
+/// A class used to manage images stors in the app's Documents directory.
 class LocalImageManager {
     
+    /// The `Error` type related to the `LocalImageManager`.
     enum LocalImageManagerError: Error {
         case imagesDirectoryURLNotValid
         
     }
     
+    /// Static shared instance, used to make this class a singleton (since its initializer is private)
     static let shared = LocalImageManager()
-    
+    /// The `FileManager` instance used to read and write local files.
     private let fileManager: FileManager = FileManager()
-    
+    /// The name of the `Images` sub-directory, where images are saved.
     private let imagesDirectoryName: String = "Images"
     
+    /// A lazy variable used to create the full URL for the `Documents/Images` directory.
     private lazy var imagesDirectoryURL: URL? = {
         let documentsURL: URL = try! fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
         let imagesDirectoryPath = documentsURL.appendingPathComponent(imagesDirectoryName)
         return imagesDirectoryPath
     }()
     
+    /// Private initialize to make this a singleton.
     private init() {
         try? createImagesDirectoryIfNeeded()
     }
@@ -83,9 +90,10 @@ class LocalImageManager {
         try? imageData.write(to: destinationFilename)
     }
     
+    /// Downloads an image, stores it locally, and calls the completion block with the fetched image.
     func downloadImage(url: URL, completion: ((UIImage?)->Void)?) -> URLSessionDownloadTask {
         let task = URLSession.shared.downloadTask(with: url) { [weak self] localURL, urlResponse, error in
-            if let e = error as? NSError {
+            if let e = error as NSError? {
                 if e.code == NSURLErrorCancelled {
                     print("Cancelled task")
                 }
@@ -105,8 +113,10 @@ class LocalImageManager {
     
 }
 
+/// An extension on UIImageView used to load images, much like Kingfisher or SDWebImage.
 extension UIImageView {
     
+    /// Replaces the image within the imageView, optionally animated.
     func replaceImage(newImage: UIImage?, animated: Bool) {
         if newImage == nil { // skip all animations
             image = newImage

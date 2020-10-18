@@ -8,6 +8,7 @@ Technical test for a job at LeBonCoin :)
 - Deployment target is iOS 11.0
 - Device orientation is restricted to only Portrait
 - No iPadOS support, only iOS
+- No external dependency !
 
 ## Environments configuration
 Here there is no configuration, secondary schemes or anything because we only have the one (static) endpoint. 
@@ -31,3 +32,9 @@ It doesn't apply the usual V-I-P "loop", so it's not strict "by-the-book" VIPER.
 
 Protocols are used to communicate between the different layers of a module.
 In this project we have 3 modules : Navigation, List and Detail.
+
+## Documentation
+
+You can generate HTML documentation using [Jazzy](https://github.com/realm/jazzy).
+
+

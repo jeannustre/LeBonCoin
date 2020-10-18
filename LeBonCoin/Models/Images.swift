@@ -7,7 +7,10 @@
 
 import Foundation
 
+/// Codable struct used to hold both images for a listing.
 struct Images: Codable {
+    /// The small image URL.
     var small: URL?
+    /// The thumbnail image URL.
     var thumb: URL?
 }

@@ -7,11 +7,14 @@
 
 import UIKit
 
+/// The application delegate.
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    /// Reference to the main window. Only used before iOS 13.
     var window: UIWindow?
     
+    ///  Called when the application has finished launching - sets up the first module.
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
@@ -30,15 +33,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // MARK: UISceneSession Lifecycle
+    
+    /// Returns the default configuration when connecting to a `Scene`.
     @available(iOS 13.0, *)
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-
-    @available(iOS 13.0, *)
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-    }
-
 
 }
 

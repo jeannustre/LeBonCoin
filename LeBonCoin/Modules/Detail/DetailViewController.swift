@@ -121,7 +121,7 @@ class DetailViewController: UIViewController {
         pinSubviews()
     }
  
-    /// Adds and constraints all subviews.
+    /// Adds all subviews.
     private func addSubviews() {
         view.addSubview(scrollView)
         scrollView.addSubview(containerView)
@@ -134,6 +134,7 @@ class DetailViewController: UIViewController {
         
     }
     
+    /// Constraints all views.
     private func pinSubviews() {
         pinScrollView()
         pinContainerView()
@@ -145,6 +146,7 @@ class DetailViewController: UIViewController {
         pinDescriptionLabel()
     }
     
+    /// Pins the scroll view.
     private func pinScrollView() {
         scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
@@ -152,6 +154,7 @@ class DetailViewController: UIViewController {
         scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
+    /// Pins the container view.
     private func pinContainerView() {
         containerView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
         containerView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
@@ -160,29 +163,34 @@ class DetailViewController: UIViewController {
         containerView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
     }
     
+    /// Pins the image view.
     private func pinListingImageView() {
         listingImageView.topAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
         listingImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor).isActive = true
         listingImageView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor).isActive = true
     }
     
+    /// Pins the title.
     private func pinTitleLabel() {
         titleLabel.topAnchor.constraint(equalTo: listingImageView.bottomAnchor, constant: 12).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 12).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -12).isActive = true
     }
     
+    /// Pins the price label.
     private func pinPriceLabel() {
         priceLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12).isActive = true
         priceLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -12).isActive = true
     }
     
+    /// Pins the urgent label.
     private func pinUrgentLabel() {
         urgentLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12).isActive = true
         urgentLabel.leadingAnchor.constraint(equalTo: categoryView.trailingAnchor, constant: 12).isActive = true
         urgentLabel.heightAnchor.constraint(equalTo: priceLabel.heightAnchor).isActive = true
     }
     
+    /// Pins the category view.
     private func pinCategoryView() {
         categoryView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12).isActive = true
         categoryView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12).isActive = true
@@ -190,6 +198,7 @@ class DetailViewController: UIViewController {
         categoryView.heightAnchor.constraint(equalTo: priceLabel.heightAnchor).isActive = true
     }
     
+    /// Pins the description label.
     private func pinDescriptionLabel() {
         descriptionLabel.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: 12).isActive = true
         descriptionLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 12).isActive = true
@@ -197,6 +206,7 @@ class DetailViewController: UIViewController {
         descriptionLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -12).isActive = true
     }
     
+    /// Configures the view controller for the current `Listing`.
     private func configure() {
         guard let viewModel = presenter?.getListingViewModel() else { return }
         imageLoadingTask = listingImageView.asyncLoad(from: viewModel.smallImageUrl() ?? viewModel.thumbImageUrl(), animated: true) { [weak self] image in

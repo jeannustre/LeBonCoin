@@ -7,12 +7,14 @@
 
 import UIKit
 
+/// The `UITableViewCell` used to represent a `Listing`.
 class ListingTableViewCell: UITableViewCell {
-
+    /// A reference to the current image loading task, used to cancel it when the cell is reused.
     private var imageLoadingTask: URLSessionDownloadTask?
-    
+    /// The reuse identifier for this cell.
     static let tableViewReuseIdentifier: String = "listingTableViewCell"
     
+    /// The container view.
     private lazy var containerView: UIView = {
         let containerView = UIView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
@@ -61,6 +63,7 @@ class ListingTableViewCell: UITableViewCell {
         return priceLabel
     }()
     
+    /// The label used to indicate whether the `Listing` is urgent.
     private lazy var urgentLabel: UILabel = {
         let urgentLabel = UILabel()
         urgentLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -70,28 +73,33 @@ class ListingTableViewCell: UITableViewCell {
         return urgentLabel
     }()
     
+    /// The `CategoryView` used to display the `Listing`'s `Category`.
     private lazy var categoryView: CategoryView = {
         let categoryView = CategoryView(category: nil)
         categoryView.translatesAutoresizingMaskIntoConstraints = false
         return categoryView
     }()
     
+    /// Initializes from a cell style and reuse identifier.
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         commonInit()
     }
     
+    /// Initializes from Interface Builder.
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         commonInit()
     }
     
+    /// Common initializer.
     private func commonInit() {
         backgroundColor = .clear
         addSubviews()
         pinSubviews()
     }
  
+    /// Adds all subviews.
     private func addSubviews() {
         addSubview(containerView)
         containerView.addSubview(thumbnailImageView)
@@ -101,6 +109,7 @@ class ListingTableViewCell: UITableViewCell {
         containerView.addSubview(categoryView)
     }
     
+    /// Pins all subviews.
     private func pinSubviews() {
         pinContainerView()
         pinThumbnailImageView()
@@ -110,6 +119,7 @@ class ListingTableViewCell: UITableViewCell {
         pinUrgentLabel()
     }
     
+    /// Pins the `containerView`.
     private func pinContainerView() {
         containerView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12).isActive = true
         containerView.topAnchor.constraint(equalTo: topAnchor, constant: 6).isActive = true
@@ -117,6 +127,7 @@ class ListingTableViewCell: UITableViewCell {
         containerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -6).isActive = true
     }
     
+    /// Pins the `thumbnailImageView`.
     private func pinThumbnailImageView() {
         thumbnailImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 12).isActive = true
         thumbnailImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 12).isActive = true
@@ -124,18 +135,21 @@ class ListingTableViewCell: UITableViewCell {
         thumbnailImageView.heightAnchor.constraint(equalTo: thumbnailImageView.widthAnchor).isActive = true
     }
     
+    /// Pins the `titleLabel`.
     private func pinTitleLabel() {
         titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 12).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: thumbnailImageView.trailingAnchor, constant: 12).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -12).isActive = true
     }
     
+    /// Pins the `categoryView`.
     private func pinCategoryView() {
         categoryView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12).isActive = true
         categoryView.leadingAnchor.constraint(equalTo: thumbnailImageView.trailingAnchor, constant: 12).isActive = true
         categoryView.trailingAnchor.constraint(lessThanOrEqualTo: containerView.trailingAnchor, constant: -12).isActive = true
     }
     
+    /// Pins the `priceLabel`.
     private func pinPriceLabel() {
         priceLabel.topAnchor.constraint(greaterThanOrEqualTo: categoryView.bottomAnchor, constant: 12).isActive = true
         priceLabel.leadingAnchor.constraint(lessThanOrEqualTo: urgentLabel.trailingAnchor, constant: 12).isActive = true
@@ -143,6 +157,7 @@ class ListingTableViewCell: UITableViewCell {
         priceLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -12).isActive = true
     }
     
+    /// Pins the `urgentLabel`.
     private func pinUrgentLabel() {
         urgentLabel.topAnchor.constraint(greaterThanOrEqualTo: categoryView.bottomAnchor, constant: 12).isActive = true
         urgentLabel.leadingAnchor.constraint(equalTo: thumbnailImageView.trailingAnchor, constant: 12).isActive = true
@@ -150,11 +165,7 @@ class ListingTableViewCell: UITableViewCell {
         urgentLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -12).isActive = true
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
-    }
-    
+    /// Configures the cell with an optional `ListingViewModel`.
     func configure(with listing: ListingViewModel?) {
         imageLoadingTask = thumbnailImageView.asyncLoad(from: listing?.thumbImageUrl() ?? listing?.smallImageUrl(), animated: true) { image in }
         titleLabel.text = listing?.listingTitle()
@@ -163,6 +174,7 @@ class ListingTableViewCell: UITableViewCell {
         categoryView.category = listing?.category()
     }
     
+    /// Clears all content before reuse.
     func clearContent() {
         titleLabel.text = nil
         priceLabel.text = nil
