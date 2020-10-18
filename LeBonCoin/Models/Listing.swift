@@ -12,13 +12,21 @@ struct Listing: Codable {
     
     /// CodingKeys for the `Listing` Codable.
     enum CodingKeys: String, CodingKey {
+        /// The listing's identifier
         case id
+        /// The listing's category's id
         case category = "category_id"
+        /// The listing's title
         case title
+        /// The listing's description
         case description
+        /// The listing's price
         case price
+        /// The listing's images
         case images = "images_url"
+        /// The listing's creation date
         case creationDate = "creation_date"
+        /// The listing's urgency status
         case isUrgent = "is_urgent"
     }
     

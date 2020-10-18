@@ -22,8 +22,8 @@ class LocalImageManager {
     
     /// The `Error` type related to the `LocalImageManager`.
     enum LocalImageManagerError: Error {
+        /// Used when the images directory URL could not be created.
         case imagesDirectoryURLNotValid
-        
     }
     
     /// Static shared instance, used to make this class a singleton (since its initializer is private)

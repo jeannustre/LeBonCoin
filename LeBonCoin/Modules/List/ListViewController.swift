@@ -7,16 +7,17 @@
 
 import UIKit
 
+/// The view controller for the `List` module.
 class ListViewController: UIViewController {
-    
+    /// Reference to the module's presenter.
     var presenter: ListViewToPresenterProtocol?
     
+    /// The table view used to display content.
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.delegate = self
         tableView.dataSource = self
-//        tableView.prefetchDataSource = self
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
         tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 60, right: 0)
@@ -24,14 +25,17 @@ class ListViewController: UIViewController {
         return tableView
     }()
 
+    /// The initializer.
     init() {
         super.init(nibName: nil, bundle: nil)
     }
     
+    /// IB bad
     required init?(coder: NSCoder) {
         fatalError("Please initialize ListViewController programatically only")
     }
     
+    /// Initializes the view controller.
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
@@ -45,6 +49,7 @@ class ListViewController: UIViewController {
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
+    /// Configure nav bar buttons when the categoris have been fetched.
     private func configureNavBarButtons() {
         let filterButton = presenter?.getFilterButton()
         navigationItem.setRightBarButton(filterButton, animated: true)
@@ -52,31 +57,38 @@ class ListViewController: UIViewController {
 
 }
 
+/// Extension on `ListViewController` to be the `tableView`'s delegate.
 extension ListViewController: UITableViewDelegate {
     
+    /// Called when a row has been selected. Tells the presenter.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         presenter?.listingTapped(at: indexPath)
     }
     
+    /// Returns the height for rows.
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 170
     }
 
 }
 
+/// Extension on `ListViewController` to be the `tableView`'s delegate.
 extension ListViewController: UITableViewDataSource {
     
+    /// Dequeues and configures a row.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ListingTableViewCell.tableViewReuseIdentifier, for: indexPath) as! ListingTableViewCell
         cell.configure(with: presenter?.listing(at: indexPath))
         return cell
     }
     
+    /// Always only one section in this app.
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+    /// Asks the number of rows to the `presenter`, then returns it;
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter?.numberOfListings() ?? 0
     }

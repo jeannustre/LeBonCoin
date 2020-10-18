@@ -23,6 +23,7 @@ final class ListPresenter: ListViewToPresenterProtocol {
     /// The currently selected category
     var currentCategory: Category?
     
+    /// The listings, sorted by date, then by urgency status.
     var safeListings: [Listing] {
         var l = self.listings
         l?.sort(by: { $0.creationDate ?? Date() < $1.creationDate ?? Date() }) // There must be some less ugly way but oh well
@@ -96,28 +97,34 @@ extension ListPresenter: ListInteractorToPresenterProtocol {
         view?.getListingsError()
     }
     
+    /// When categories have been fetched from the interactor, stores them in the presenter.
     func getCategoriesSuccess(response: [Category]) {
         self.categories = response
     }
     
+    /// Called when there has been an error fetching categories.
     func getCategoriesError(error: Error?) {
         view?.getListingsError()
     }
     
 }
 
+/// Extension on `ListPresenter` to conform to `FilterButtonDelegate`. Allows to get information back from the `FilterButton`.
 extension ListPresenter: FilterButtonDelegate {
     
+    /// Called when a category has been selected.
     func filterButton(filterButton: FilterButton, didSelectCategory category: Category?) {
         currentCategory = category
         view?.reloadTable()
     }
     
+    ///  Called when the "all categories" button has been selected.
     func filterButtonDidSelectAllCategories(filterButton: FilterButton) {
         currentCategory = nil
         view?.reloadTable()
     }
     
+    /// Called when the `FilterButton` wants to present.
     func filterButton(filterButton: FilterButton, asksToPresentAlertController controller: UIAlertController) {
         view?.presentController(controller)
     }
