@@ -1,12 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/jeansarda/Workspace/LeBonCoin/LeBonCoin/Helpers/AlmostKingfisher.swift",
-      "line": 25,
-      "symbol": "LocalImageManager.LocalImageManagerError.imagesDirectoryURLNotValid",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/jeansarda/Workspace/LeBonCoin"
 }

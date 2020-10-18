@@ -1,4 +1,5 @@
-# LeBonCoin
+
+0;95;0c# LeBonCoin
 Technical test for a job at LeBonCoin :)
 
 ## Project configuration
@@ -36,5 +37,5 @@ In this project we have 3 modules : Navigation, List and Detail.
 ## Documentation
 
 You can generate HTML documentation using [Jazzy](https://github.com/realm/jazzy).
-
+A pre-generated, up-to-date version of the documentation is already available by opening docs/swift/index.html.
 

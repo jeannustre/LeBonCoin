@@ -26,6 +26,18 @@ custom_categories:
     - ListingViewModel
     - Images
     - Category
+  - name: Navigation Module
+    children:
+    - NavigationViewController
+    - NavigationInteractor
+    - NavigationPresenter
+    - NavigationRouter
+    - NavigationPresenterToViewProtocol
+    - NavigationInteractorToPresenterProtocol
+    - NavigationPresenterToInteractorProtocol
+    - NavigationViewToPresenterProtocol
+    - NavigationPresenterToRouterProtocol
+    - NavigationStrings
   - name: List Module
     children:
     - ListViewController
@@ -37,6 +49,7 @@ custom_categories:
     - ListPresenterToInteractorProtocol
     - ListViewToPresenterProtocol
     - ListPresenterToRouterProtocol
+    - ListStrings
   - name: Detail Module
     children:
     - DetailViewController
@@ -48,3 +61,25 @@ custom_categories:
     - DetailPresenterToInteractorProtocol
     - DetailViewToPresenterProtocol
     - DetailPresenterToRouterProtocol
+    - DetailStrings
+  - name: Custom Views
+    children: 
+    - CategoryView
+    - FilterButton
+    - FilterButtonDelegate
+  - name: Entry Points
+    children: 
+    - AppDelegate
+    - SceneDelegate
+  - name: Network
+    children:
+    - Routes
+  - name: Helpers
+    children:
+    - LocalImageManager
+    - LocalImageManagerError
+    - URL
+    - UIImageView 
+    - NamedColors
+    - DMSansFont
+   
